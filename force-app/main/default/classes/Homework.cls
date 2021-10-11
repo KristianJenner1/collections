@@ -20,7 +20,7 @@ public with sharing class Homework
     {
         Integer maxValue;
 
-        Integer i = 1;
+        Integer i = 0;
         // consider lists of null and -ve integers
         while (i < values.size()) 
         {
