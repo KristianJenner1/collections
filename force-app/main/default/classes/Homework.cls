@@ -46,7 +46,8 @@ public with sharing class Homework
     public List<Integer> reverse(List<Integer> values)
     {
         Integer[] reversed = new Integer[]{};
-        for(Integer i = values.size() - 1; i >= 0; i--){
+        for(Integer i = values.size() - 1; i >= 0; i--)
+        {
             reversed.add(values[i]);
         }
 
@@ -59,12 +60,12 @@ public with sharing class Homework
     {
         List<String> result = new List<String>();
 
-        for (Integer i = 3; i <= originals.size(); i++)
+        for (Integer i = 3, j = 0; i <= originals.size(); i++, j++)
         {
             // if i is exactly divisible by 3, then take the (i - 3)th element of the array
             if (Math.Mod(i, 3) == 0)
             {
-                result.add(originals.get(i-3));
+                result.add(originals.get(j));
             }
         }
 
@@ -119,7 +120,8 @@ public with sharing class Homework
     {
         Map<String, Integer> outMap = new Map<String, Integer>();
 
-        for(Integer KeyValue : inMap.keySet()){
+        for(Integer KeyValue : inMap.keySet())
+        {
             outMap.put(inMap.get(keyValue),keyValue);
         }
 
