@@ -60,13 +60,14 @@ public with sharing class Homework
     {
         List<String> result = new List<String>();
 
-        for (Integer i = 3, j = 0; i <= originals.size(); i++, j++)
+        for (Integer i = 3, j = 0; i <= originals.size(); i++)
         {
             // if i is exactly divisible by 3, then take the (i - 3)th element of the array
             if (Math.Mod(i, 3) == 0)
             {
                 result.add(originals.get(j));
             }
+            j++;
         }
 
         return result;
